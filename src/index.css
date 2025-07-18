@@ -1,0 +1,8 @@
+/* Global styles */
+body {
+  font-family: 'Source Sans 3', 'Adjusted Arial Fallback', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000;
+}
