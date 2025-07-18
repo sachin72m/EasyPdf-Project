@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 📄 EasyPdf-Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌟 **EasyPDF** is your all-in-one PDF toolkit — a powerful and user-friendly web application inspired by platforms like **Smallpdf.com**, designed to simplify document handling for users through an intuitive interface and robust backend support.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔐 Authentication Features
 
-### `npm start`
+- Secure user login and signup functionality
+- Integrated multiple OAuth providers: **Google**, **LinkedIn**, and more
+- User data securely stored and managed using **MySQL**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Key Functionalities
 
-### `npm test`
+EasyPDF offers a comprehensive set of PDF tools, including:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📄 **PDF ↔ Word** conversion  
+- 📊 **PDF ↔ PowerPoint** conversion  
+- 📉 **Compress** PDF to reduce file size  
+- 🔀 **Merge** multiple PDFs into one  
+- ✂️ **Split** PDFs into separate files  
+- 🔄 **Rotate** PDF pages  
+- ❌ **Delete** specific pages from PDFs  
+- 🛡️ **Protect / Unlock** PDFs  
+- ✍️ **e-Sign PDFs**  
+- ✅ And many more tools to streamline your document workflow
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧑‍💻 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Layer      | Tech Used                                 |
+|------------|--------------------------------------------|
+| Frontend   | HTML, CSS, JavaScript, **React.js**        |
+| Backend    | **Java**, **Spring Boot**, RESTful APIs    |
+| Database   | **MySQL**                                  |
+| Auth       | Custom Login + OAuth (Google, LinkedIn)    |
+| Arch       | Full-stack integration with REST API flow  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🌐 How It Works
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. User signs up/logs in (via custom form or social login)
+2. Uploads a PDF or document file
+3. Selects a desired tool (e.g., convert, compress, merge)
+4. Frontend sends a request to backend via REST API
+5. Backend processes the document and returns a downloadable result
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Highlights
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 💡 Clean and responsive UI/UX built with React
+- ⚡ Real-time PDF operations with efficient server-side processing
+- 🔐 Secure authentication and user management
+- 🧩 Scalable architecture for adding more tools in future
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Project Setup (for Developers)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Frontend setup
+cd frontend-folder
+npm install
+npm start
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Backend setup
+cd backend-folder
+./mvnw spring-boot:run
